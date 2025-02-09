@@ -1,7 +1,6 @@
 const input = document.getElementById("text-input");
-
 const button = document.getElementById("check-btn");
-button.addEventListener("click", resultChecker);
+
 const result = document.getElementById("result");
 
 const resultChecker = () => {
@@ -34,11 +33,13 @@ const resultChecker = () => {
       reversedArray.map((ch) => (reversedStr += ch));
     }
   }
+
   const resultText =
     filteredStr === reversedStr
       ? `${input.value} is a palindrome`
       : `${input.value} is not a palindrome`;
 
   result.innerText = resultText;
-  input.value = "";
 };
+
+button.addEventListener("click", resultChecker);

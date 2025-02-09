@@ -1,5 +1,5 @@
 body {
-  background-color: green;
+  background-color: #733dd1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,27 +7,31 @@ body {
 }
 h1 {
   text-align: center;
+  color: #ddffff;
 }
 
 .container {
   border: 1px solid #5d31a8;
+  /* box-shadow: 8px 8px 5px #9062e7; */
   border-radius: 20px;
   padding: 10px;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .container input {
   border: 0;
   border-bottom: 2px solid #5d31a8;
+
   font-size: 1.2em;
 }
 .container button {
   background-color: #5d31a8;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 10px;
 }
 .container div {
@@ -36,16 +40,24 @@ h1 {
 }
 
 .definition {
+  /* margin-left: 200px;
+  margin-right: 200px; */
   margin: 1.3rem;
-  border: 1px solid #5d31a8;
+  width: 350px;
+  border: 3px solid #5d31a8;
   border-radius: 10px;
-  width: 250px;
+  /* width: 260px; */
   padding: 10px;
   text-align: center;
   background-color: #0000;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  box-shadow: 8px 8px 5px #4f0ebe;
+  color: #ddffff;
 }
 
 .definition:hover {
   background-color: #ffffff;
+  font-size: 1.4rem;
+  color: initial;
+  border-radius: 15px;
 }
