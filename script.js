@@ -26,18 +26,12 @@ function resultChecker() {
         return regex.test(ch);
       });
 
-      filteredArray.map((ch) => {
-        filteredStr += ch;
-      });
-      reversedArray = filteredArray.reverse();
-      reversedArray.map((ch) => (reversedStr += ch));
+      const resultText =
+        filteredArray.join("") === filteredArray.reverse("").join("")
+          ? `${input.value} is a palindrome`
+          : `${input.value} is not a palindrome`;
+
+      result.innerText = resultText;
     }
-
-    const resultText =
-      filteredStr === reversedStr
-        ? `${input.value} is a palindrome`
-        : `${input.value} is not a palindrome`;
-
-    result.innerText = resultText;
   }
 }
